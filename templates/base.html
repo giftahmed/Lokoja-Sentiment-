@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GIFT</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+    <link rel="stylesheet" type="img/x-icon" href="{{ url_for('static', filename='img/favicon.html') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='img/apple-touch-icon.html') }}">
+    <link rel="stylesheet" sizes="72x72" href="{{ url_for('static', filename='img/apple-touch-icon-72x72.html') }}">
+    <link rel="stylesheet"  sizes="114x114" href="{{ url_for('static', filename='img/apple-touch-icon-114x114.html') }}">
+
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="{{ url_for('static', filename='fonts/font-awesome/css/font-awesome.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='../../fonts.googleapis.com/css1087.css?family=Raleway:300,400,500,600,700') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='../../fonts.googleapis.com/cssff98.css?family=Open+Sans:300,400,600,700') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='../../fonts.googleapis.com/css284d.css?family=Rochester') }}">
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#features" class="page-scroll">About</a></li>
+        <li><a href="#contact" class="page-scroll">Feedback</a></li>
+        
+
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+</nav>
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="intro-text">
+            <h1>Sentiment Analysis of Restaurants</h1>
+            <p>Welcome Restaurant Feedback Portal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Features Section -->
+<div id="features" class="text-center">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Specials</h2>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="features-item">
+          <h3>Treasures</h3>
+          <img src="static/img/specials/trw1.jpg" class="img-responsive" alt="">
+          <p>You can contact Treasures in lokoja by phone using number 0803 356 8745. Treasures in lokoja is located at Lokoja-Ankpa Rd, Lokoja, Nigeria</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="features-item">
+          <h3>Fragrant Spice Restaurant</h3>
+          <img src="static/img/specials/fs1.png" class="img-responsive" alt="">
+          <p>Fragrant Spice Restaurant Rakiya Ogbeha Place 35 Mount Patti Way, G.R.A, Lokoja. Get directions here. Telephone/WhatsApp: +2347063663030
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="features-item">
+          <h3>Misi T Restaurant</h3>
+          <img src="static/img/specials/mt1.jpg" class="img-responsive" alt="">
+          <p> Misturah Plaza, 5 Aliu Attah Road, Township/ G.R.A</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <br><br>
+    <div class="container">
+        {% block content %} {% endblock %}
+    </div>
+  </div>
+  
+</div>
+<div id="footer">
+  <div class="container text-center">
+    <div class="col-md-6">
+      <p>&copy; @GIFT AHMED</a></p>
+    </div>
+    <div class="col-md-6">
+      <div class="social">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="static/js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="static/js/bootstrap.js"></script> 
+<script type="text/javascript" src="static/js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="static/js/jqBootstrapValidation.js"></script> 
+<!-- <script type="text/javascript" src="static/js/contact_me.js"></script>  -->
+<script type="text/javascript" src="static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %} 
+    <!-- <div class="row">
+      <form action = "results.html" method="POST">
+          <label for="movie-review">Write your review here.</label>
+          <textarea id="movie-review" name="result" class="form-control" rows="3"></textarea>
+          <button class="btn btn-primary" type="submit", value="submit" style="margin: 1%; padding: 1%; float:right;">Submit Review</button>
+      </form>
+    </div> -->
+    <li><a href="reviews.html" class="page-scroll">Review</a></li>
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h3>Send us a message</h3>
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+        <form name="sentMessage" id="contactForm" method="POST" action="results.html"  novalidate>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group" >
+                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+                
+            <textarea name="result" id="message" class="form-control" rows="4"  data-validate = "Message is required" placeholder="Write Us A Review" required="complesary"></textarea>
+            <p class="help-block text-danger"></p>
+          </div>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-custom btn-lg" value="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+{% endblock %}

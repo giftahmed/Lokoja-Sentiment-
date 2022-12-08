@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3>{% block title %}  Reviews {% endblock %} </h3>
+    <p>Click <a href="index.html"> here</a> to the homepage</p>
+    <hr>
+    {% for post in posts %}
+        <p> {{ post['ID'] }} - {{ post['Review'] }} </p>
+        <span class="badge badge-primary" style="margin:auto; float:right; margin-top:-3%">{{ post['Prediction'] }}</span>
+    
+    {% endfor %}
+{% endblock %}
