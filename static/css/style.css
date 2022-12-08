@@ -7,25 +7,6 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
-.alert-validate::before {
-	content: attr(data-validate);
-	position: absolute;
-	max-width: 70%;
-	background-color: #fff;
-	border: 1px solid #c80000;
-	border-radius: 2px;
-	padding: 4px 25px 5px 10px;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	right: 12px;
-	pointer-events: none;
-}
-  
-
 h1, h2, h3, h4 {
 	font-family: 'Raleway', sans-serif;
 }
